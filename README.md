@@ -9,25 +9,29 @@ This project is a tool designed to translate simple, syntactically valid Java co
 
 ## Installation
 
-Clone the repository:
+1. Clone the repository
 ```bash
 git clone https://github.com/angela924/JavaToPython.git
+```
+2. Navigate to the project
+```bash
+cd path/to/JavaToPython
+```
+3. Compile JavaToPython and Test
+```bash
+javac -d out src/main/JavaToPython.java
+javac -d out -cp out src/test/Test.java
 ```
 
 ## Usage
 
-1. Navigate to the project
+1. Navigate to main
 ```bash
-cd JavaToPython
+cd src/main
 ```
-2. Navigate to the src directory
+2. Store the Java code in the file named "code"
+3. Navigate back to JavaToPython and run the application
 ```bash
-cd src
-```
-
-4. Store Java code in the file named "code" in the src directory
-
-5. Run the application
-```bash
-java JavaToPython.java
+cd ../..
+java -cp out main.JavaToPython
 ```
